@@ -50,15 +50,16 @@ int main()
 	printf( "month = %d  day = %d  year = %d\n", month2, day2, year2 );
 */
 	//bai tap: 4.3
+/*
 	float r;
 	printf("Nhap ban kinh vong trong: ");
 	scanf("%f", &r);
 	printf("Dien tich hinh tron la: %f\n", 3.14*r*r);
 	printf("Chu vi hinh tron la: %f\n", 2*3.14*r);
-
+*/
 	//Bai tap: 4.4 thanh toan tien sach
     // Khai báo các biến lưu trữ thông tin
-/*
+
 	char title[100];
     char isbn[20];
     double price;
@@ -101,6 +102,6 @@ int main()
     printf("VAT (5%%): %43.2f\n", vat);
     printf("You pay: %44.2f\n", total_pay);
     printf("----------------------------------------------------------------------------\n");
-*/
+
 	return 0;
 }

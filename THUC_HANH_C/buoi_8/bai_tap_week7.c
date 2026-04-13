@@ -35,7 +35,7 @@ int main()
 
     if (truong_hop == 1) {
         // Truong hop tinh tong so le
-        for (int i = 1; i <= n; i++) {
+        for ( i = 1; i <= n; i++) {
             if (i % 2 == 1) {
                 tong += i;
             }
@@ -44,7 +44,7 @@ int main()
     } 
     else if (truong_hop == 2) {
         // Truong hop tinh tong so chan
-        for (int i = 1; i <= n; i++) {
+        for (i = 1; i <= n; i++) {
             if (i % 2 == 0) {
                 tong += i;
             }
@@ -75,7 +75,7 @@ int main()
     
     //bai tap 10: xac dinh so nguyen phai la so nguyen to khong
  
-    printf("Bai tap 10: xa dinh so nguyen to\n");
+    printf("Bai tap 10: xac dinh so nguyen to\n");
     printf("nhap so nguyen n: ");
     scanf("%d", &n);
     if(n < 2) {
@@ -96,26 +96,26 @@ int main()
     }
     printf("\n");
     //bai tap 7.11:
-    printf("Bai tap 7.11:\n");
+    printf("Bai tap 7.11: \n");
     double epsilon;
     printf("Nhap epsilon: ");
     scanf("%lf", &epsilon);
 
     n = 1; // sử dụng lại biến n đã khai báo ở đầu
-    long long giai_thua_11 = 1;
-    double mot_chia_giaithua_11, tong_11 = 0;
-    while (1) {
-        giai_thua_11 *= n;                        //tinh n!
-        mot_chia_giaithua_11 = 1.0 / giai_thua_11;
+    long long giaithua = 1;
+    double mot_chia_giaithua, tong1 = 1;
+    for(n = 1; ; n++) {
+        giaithua *= n;                         //tinh n!
+        mot_chia_giaithua = 1.0 / giaithua; //tinh 1/(n!)
 
-        if (mot_chia_giaithua_11 < epsilon) {
+        if (mot_chia_giaithua < epsilon) {
             break;
         }
-        tong_11 += mot_chia_giaithua_11;
-        n++;
+        tong1 += mot_chia_giaithua;
     }
-    printf("Tong S = %f\n", tong_11);
+    printf("Tong S = %f\n", tong1);
     printf("Dung lai tai n = %d\n", n);
-   
+    printf("\n");
+
     return 0;
 }
